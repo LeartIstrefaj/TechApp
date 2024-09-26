@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechApp.Data;
 
@@ -11,9 +12,11 @@ using TechApp.Data;
 namespace TechApp.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240926230046_AddCustomTables")]
+    partial class AddCustomTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -286,6 +289,9 @@ namespace TechApp.Data.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<int>("ContentId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("DateTimeReleased")
                         .HasColumnType("datetime2");
 
@@ -334,8 +340,6 @@ namespace TechApp.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CategoryItemId");
 
                     b.ToTable("Content");
                 });
@@ -450,17 +454,6 @@ namespace TechApp.Data.Migrations
                         .HasForeignKey("MediaTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("TechApp.Entites.Content", b =>
-                {
-                    b.HasOne("TechApp.Entites.CategoryItem", "CategoryItem")
-                        .WithMany()
-                        .HasForeignKey("CategoryItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("CategoryItem");
                 });
 
             modelBuilder.Entity("TechApp.Entites.UserCategory", b =>

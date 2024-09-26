@@ -144,3 +144,4 @@ C:\Users\Leart\source\repos\TechApp\TechApp\obj\Debug\net8.0\refint\TechApp.dll
 C:\Users\Leart\source\repos\TechApp\TechApp\obj\Debug\net8.0\TechApp.pdb
 C:\Users\Leart\source\repos\TechApp\TechApp\obj\Debug\net8.0\TechApp.genruntimeconfig.cache
 C:\Users\Leart\source\repos\TechApp\TechApp\obj\Debug\net8.0\ref\TechApp.dll
+C:\Users\Leart\source\repos\TechApp\TechApp\obj\Debug\net8.0\TechApp.sourcelink.json

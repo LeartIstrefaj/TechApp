@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechApp.Data;
 
@@ -11,9 +12,11 @@ using TechApp.Data;
 namespace TechApp.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240926231042_AddTables_Updated_contentTable")]
+    partial class AddTables_Updated_contentTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -286,6 +289,9 @@ namespace TechApp.Data.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<int>("ContentId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("DateTimeReleased")
                         .HasColumnType("datetime2");
 
@@ -304,6 +310,9 @@ namespace TechApp.Data.Migrations
 
                     b.HasIndex("CategoryId");
 
+                    b.HasIndex("ContentId")
+                        .IsUnique();
+
                     b.HasIndex("MediaTypeId");
 
                     b.ToTable("CategoryItem");
@@ -316,9 +325,6 @@ namespace TechApp.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CategoryItemId")
-                        .HasColumnType("int");
 
                     b.Property<string>("HTMLContent")
                         .IsRequired()
@@ -334,8 +340,6 @@ namespace TechApp.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CategoryItemId");
 
                     b.ToTable("Content");
                 });
@@ -445,22 +449,17 @@ namespace TechApp.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("TechApp.Entites.Content", null)
+                        .WithOne("CategoryItemId")
+                        .HasForeignKey("TechApp.Entites.CategoryItem", "ContentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("TechApp.Entites.MediaType", null)
                         .WithMany("CategoryItems")
                         .HasForeignKey("MediaTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("TechApp.Entites.Content", b =>
-                {
-                    b.HasOne("TechApp.Entites.CategoryItem", "CategoryItem")
-                        .WithMany()
-                        .HasForeignKey("CategoryItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("CategoryItem");
                 });
 
             modelBuilder.Entity("TechApp.Entites.UserCategory", b =>
@@ -488,6 +487,12 @@ namespace TechApp.Data.Migrations
                     b.Navigation("CategoryItems");
 
                     b.Navigation("UserCategories");
+                });
+
+            modelBuilder.Entity("TechApp.Entites.Content", b =>
+                {
+                    b.Navigation("CategoryItemId")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("TechApp.Entites.MediaType", b =>
