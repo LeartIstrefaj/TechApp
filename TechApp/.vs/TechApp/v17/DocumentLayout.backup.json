@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Leart\\source\\repos\\TechApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8091B28-D7F8-4D1A-8C5F-9433CD819F79}|TechApp\\TechApp.csproj|c:\\users\\leart\\source\\repos\\techapp\\techapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8091B28-D7F8-4D1A-8C5F-9433CD819F79}|TechApp\\TechApp.csproj|solutionrelative:techapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8091B28-D7F8-4D1A-8C5F-9433CD819F79}|TechApp\\TechApp.csproj|c:\\users\\leart\\source\\repos\\techapp\\techapp\\views\\shared\\_adminmenupartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8091B28-D7F8-4D1A-8C5F-9433CD819F79}|TechApp\\TechApp.csproj|solutionrelative:techapp\\views\\shared\\_adminmenupartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8091B28-D7F8-4D1A-8C5F-9433CD819F79}|TechApp\\TechApp.csproj|c:\\users\\leart\\source\\repos\\techapp\\techapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8091B28-D7F8-4D1A-8C5F-9433CD819F79}|TechApp\\TechApp.csproj|solutionrelative:techapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8091B28-D7F8-4D1A-8C5F-9433CD819F79}|TechApp\\TechApp.csproj|c:\\users\\leart\\source\\repos\\techapp\\techapp\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8091B28-D7F8-4D1A-8C5F-9433CD819F79}|TechApp\\TechApp.csproj|solutionrelative:techapp\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_AdminMenuPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\Views\\Shared\\_AdminMenuPartial.cshtml",
+              "RelativeDocumentMoniker": "TechApp\\Views\\Shared\\_AdminMenuPartial.cshtml",
+              "ToolTip": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\Views\\Shared\\_AdminMenuPartial.cshtml",
+              "RelativeToolTip": "TechApp\\Views\\Shared\\_AdminMenuPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T00:59:25.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\Program.cs",
+              "RelativeDocumentMoniker": "TechApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\Program.cs",
+              "RelativeToolTip": "TechApp\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T00:53:57.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TechApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TechApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAACsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T00:41:40.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "TechApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "TechApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T00:41:23.685Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
