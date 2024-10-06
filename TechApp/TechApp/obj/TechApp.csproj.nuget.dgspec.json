@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\TechApp.csproj": {}
+    "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\TechApp\\TechApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\TechApp.csproj": {
+    "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\TechApp\\TechApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\TechApp.csproj",
+        "projectUniqueName": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\TechApp\\TechApp.csproj",
         "projectName": "TechApp",
-        "projectPath": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\TechApp.csproj",
+        "projectPath": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\TechApp\\TechApp.csproj",
         "packagesPath": "C:\\Users\\Leart\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\obj\\",
+        "outputPath": "C:\\Users\\Leart\\source\\repos\\TechApp\\TechApp\\TechApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,6 +77,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.5, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.7.1, )"
             }
           },
           "imports": [

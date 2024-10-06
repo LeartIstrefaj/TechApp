@@ -1,9 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using TechApp.Interfaces;
 
 namespace TechApp.Entites
 {
-    public class MediaType
+    public class MediaType : IPrimaryProperties
     {
         public int Id { get; set; }
         [Required]

@@ -1,5 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using TechApp.Interfaces;
 
 namespace TechApp.Entites
 {
@@ -12,6 +14,8 @@ namespace TechApp.Entites
         public string Description { get; set; }
         public int CategoryId { get; set; }
         public int MediaTypeId {  get; set; }
+        [NotMapped]
+        public virtual ICollection<SelectListItem> MediaTypes { get; set; }
         public DateTime DateTimeReleased {  get; set; }
 
         
