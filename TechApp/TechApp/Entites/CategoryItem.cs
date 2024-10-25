@@ -16,8 +16,8 @@ namespace TechApp.Entites
         public int MediaTypeId {  get; set; }
         [NotMapped]
         public virtual ICollection<SelectListItem> MediaTypes { get; set; }
-        public DateTime DateTimeReleased {  get; set; }
-
-        
+        public DateTime DateTimeReleased { get; set; }
+        [NotMapped]
+        public int ContentId { get; internal set; }
     }
 }

@@ -13,6 +13,11 @@ namespace TechApp.Entites
         public string HTMLContent { get; set; }
         public string VideoLink { get; set; }
         public CategoryItem CategoryItem { get; set; }
+        [NotMapped]
+        public int CategoryId { get; set; }
+        [NotMapped]
+        public int CatItemId {  get; set; }
+
 
 
     }

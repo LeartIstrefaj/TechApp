@@ -25,15 +25,21 @@ namespace TechApp.Areas.Admin.Controllers
         public async Task<IActionResult> Index(int categoryId)
         {
             List<CategoryItem> list = await (from catItem in _context.CategoryItem
+                                             join contentItem in _context.Content
+                                             on catItem.Id equals contentItem.CategoryItem.Id
+                                             into gj
+                                             from subContent in gj.DefaultIfEmpty()
+
                                              where catItem.CategoryId == categoryId
                                              select new CategoryItem
                                              {
-                                                 Id  = catItem.Id,
+                                                 Id = catItem.Id,
                                                  Title = catItem.Title,
                                                  Description = catItem.Description,
                                                  CategoryId = categoryId,
                                                  MediaTypeId = catItem.MediaTypeId,
                                                  DateTimeReleased = catItem.DateTimeReleased,
+                                                 ContentId = (subContent != null) ? subContent.Id : 0
 
                                              }).ToListAsync();
             ViewBag.CategoryId = categoryId;
